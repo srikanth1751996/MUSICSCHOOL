@@ -1,0 +1,37 @@
+<h1>
+  <marquee width="60%" direction="right" height="50px">
+    <i>SCHOOL OF MUSIC</i>
+    </marquee>
+</h1>
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <!-- Brand -->
+  <a class="navbar-brand" routerLink="home">HOME</a>
+
+  <!-- Links -->
+  <ul class="navbar-nav">
+   
+    <li class="nav-item">
+      <a class="nav-link" routerLink="programs">PROGRAMS</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-link" routerLink="aboutus">ABOUT US</a>
+    </li>
+
+    <!-- Dropdown -->
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" routerLink="instrumentslist" id="navbardrop" data-toggle="dropdown">
+       INSTRUMENTS LIST
+      </a>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" routerLink="instrumentslist/piano">PIANO</a>
+        <a class="dropdown-item" routerLink="instrumentslist/guitar">GUITAR</a>
+        <a class="dropdown-item" routerLink="instrumentslist/violin">VIOLIN</a>
+      </div>
+    </li>
+  </ul>
+</nav>
+
+
+
+<router-outlet></router-outlet>
